@@ -1,0 +1,82 @@
+body {
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: white;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
+
+.logo {
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #ff1493;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.content h1 {
+    color: #ff1493;
+}
+
+footer {
+    text-align: center;
+    background: #ff69b4;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
